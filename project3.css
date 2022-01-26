@@ -1,0 +1,135 @@
+/* for mobile */
+#main {
+    width:100%;
+    margin:auto; 
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#menu {
+    background-color: #556270;
+    width: 100%;
+    overflow: auto;
+}
+li{
+    display: inline;
+}
+.menu-left{
+    float: left;
+}
+.menu-right{
+    display: block;
+    float: right;
+    margin-right: 30px;
+}
+
+#menu a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+#banner{
+    width: 100%;
+    height: 250px;
+    background-image:none;
+    position: relative;
+}
+.banner-text{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Arvo', serif;
+}
+.main-content{
+    background-color: #efefef;
+    width: 100%;
+    float: left;
+}
+
+.main-text{
+    margin-left: 30px;
+    width: 100%;
+    text-align: left;
+}
+
+.table-img {
+    width: 98%;
+    float: left;
+    display: block;
+    margin: auto;
+    margin-left: 20px;
+}
+
+.col-4 {
+    width:100%;
+    margin-right:15px;
+    float: left;
+}
+img{
+    width: 100%;
+}
+br{
+   display: none; 
+}
+#footer{
+    background-color: #f7f7f7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: left;
+    margin-bottom: 20px;
+}
+   
+.footer-col-4{
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-left: 10px;
+}
+/*for tablet*/
+@media screen and (min-width:768px) and (max-width:991px){
+    #menu {
+        background-color: #556270;
+    }
+    .col-4 {
+        width:48%;
+    }
+}
+/*for desktop*/
+@media screen and (min-width:992px){
+    #main {
+        width:1278px;
+   }
+   #menu{
+       height: 50px;
+       background-color: white;
+   }
+   #menu a{
+    color: grey;
+    }
+   #banner{
+       height: 500px;
+       background-image:url("banner.png");
+   }
+   .banner-text{
+       top: 80px;
+       left: 4%;
+       color: white;
+       font-size: 25px;
+   }
+   #banner img{
+       width:100%;
+       height: auto;
+   }
+   .col-4 {
+       width:32%;
+   }
+   br{
+    display: block; 
+ }
+   
+   .footer-col-4{
+       width: 32%;
+   }
+}
